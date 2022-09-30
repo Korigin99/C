@@ -1,0 +1,70 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define WORDS 5
+
+main() {
+	//단어를 입력받아 strcmp로 비교하기
+	/*char x[6];
+	char y[6];
+	int result;
+
+	printf("첫번째 단어를 입력하시오:");
+	scanf("%s", x);
+
+	printf("두번째 단어를 입력하시오:");
+	scanf("%s", y);
+
+	result = strcmp(x, y);
+
+	if (result == 0)
+		printf("%s와 %s는 같은 위치에 있습니다.%d", x, y,result);
+	else if (result < 0)
+		printf("%s가 %s보다 앞에 있습니다.%d", x, y,result);
+	else
+		printf("%s가 %s보다 앞에 있습니다.", y, x);*/
+
+	//strcmp를 사용하여 퀴즈 문제 맞추기
+	/*char r[10] = "복숭아";
+		char a[10];
+		int result;
+
+		while (1) {
+			printf("내가 제일 좋아하는 과일은 무엇입니까?");
+			scanf("%s", &a);
+			result = strcmp(r, a);
+			if (result == 0) {
+				printf("맞췄습니다!");
+				break;
+			}
+			else
+				continue;
+		}*/
+
+	//3차원 배열로 사전 만들고 찾기
+	/*int i;
+	char dic[WORDS][2][30] = {
+		{"book", "책"},
+		{"boy", "소년"},
+		{"computer", "컴퓨터"},
+		{"language", "언어"},
+		{"rain", "비"}};
+
+	char word[30];
+
+	printf("영어 단어를 입력하시오:");
+	scanf("%s", &word);
+
+	for (i = 0; i < WORDS; i++) {
+		if (strcmp(word, dic[i][0]) == 0) {
+			printf("%s : %s", dic[i][0], dic[i][1]);
+			return;
+		}
+	}
+	printf("사전에 없는 단어입니다.");
+	return;*/
+
+	//*(d+i*20+j) == d[i][j]
+	//d[30*5*i + 30*j + k] == d[i][j][k]
+}
